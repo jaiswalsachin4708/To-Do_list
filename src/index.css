@@ -1,0 +1,142 @@
+body{
+    background-color: #083648;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.main_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.center_div{
+    border-radius: 5px;
+    box-shadow: 10px 10px 60px #e8eec8;
+    height: 80vh;
+    width: 30%;
+    background-color: #083648;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.inner_div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+   
+}
+button{
+    padding: 8px 8px;
+    border: 1.5px solid white;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #093b50;
+    color: white;
+    cursor: pointer;
+}
+button:hover{
+    background: #5fc6d5;
+    transition: 1s;
+}
+h1{
+    font-size: 40px;
+    margin: 0;
+    color: #d8e0b0;
+    text-align: center;
+}
+input{
+   padding: 10px;
+    border: none;
+    border-radius: 2px;
+    font-size: 18px;
+    font-weight: 600;
+    width: 70%;
+    outline: none;
+    text-align: center;
+    border: none;
+    background: #f4f6ec;
+    margin-right: 30px;
+    text-align: left; 
+}
+ol{
+    margin: 30px 20px 0 20px;
+    padding-left: 0;
+}
+ol li{
+    color: white;
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-size: 22px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    margin :7px 0;
+    box-shadow: 1px 1px 5px white;
+
+}
+.todolist{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    justify-content: space-between;
+}
+.cross{
+    font-size: 30px;
+    color: white;
+}
+.cross:hover{
+    font-size: 33px;
+    color: #90c3da;
+    transition: width 0.3s;
+    box-shadow: 1px 1px 10px white;
+    border-radius: 50%;
+}
+@media (max-width:950px){
+    .center_div{
+        width: 40%;
+    }
+}
+
+@media (max-width:768px){
+    .center_div{
+        width: 55%;
+    }
+    button{
+    font-size: 16px;
+    
+    }
+}
+
+@media (max-width:368px){
+    .center_div{
+        width: 75%;
+    }
+
+    button{
+    font-size: 14px;
+    padding: 0px 7px;
+    }
+    input{
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+    margin-right: 20px;
+    }
+    h1{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    ol li{
+        font-size: 18px;
+    
+    }
+    .cross{
+        font-size: 25px;
+        }
+}
